@@ -14,7 +14,7 @@ async(conn, mek, m, {from, quoted, body, isCmd, command, args, q, isGroup, sende
     try {
         // Check if the user is asking who made it
         if (q.toLowerCase().includes("කවුද හැදුවේ") || q.toLowerCase().includes("who made this")) {
-            return reply(මාව හැදුවේ 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉 )
+            return reply(`මාව හැදුවේ 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉`)
         }
 
         // Normal AI response
