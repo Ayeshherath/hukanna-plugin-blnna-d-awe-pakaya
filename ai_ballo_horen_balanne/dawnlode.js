@@ -6,7 +6,7 @@ const { ytsearch, ytmp3, ytmp4 } = require('@dark-yasiya/yt-dl.js');
 // video
 
 cmd({ 
-    pattern: "video", 
+    pattern: "videoNEW", 
     alias: ["ytdl", "mp4"], 
     react: "🎥", 
     desc: "Download Youtube song", 
@@ -30,15 +30,13 @@ cmd({
             return reply("Failed to fetch the video. Please try again later.");
         }
         
-        let ytmsg = `╭━━━〔 *𝐒𝐔𝐋𝐀-𝐌𝐃* 〕━━━┈⊷
-┇๏ *Title* -  ${yts.title}
-┇๏ *Duration* - ${yts.timestamp}
-┇๏ *Views* -  ${yts.views}
-┇๏ *Author* -  ${yts.author.name}
-┇๏ *Link* -  ${yts.url}
-╰────────────────┈⊷
-
-> 🄿🄾🅆🄴🅁🄳 🅱🆈 𝐒𝐔𝐋𝐀_𝐌𝐃 😈`;
+        let ytmsg = `╭━━━〔 *𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳* 〕━━━┈⊷
+*Title* -  ${yts.title}
+*Duration* - ${yts.timestamp}
+*Views* -  ${yts.views}
+*Author* -  ${yts.author.name}
+*Link* -  ${yts.url}
+`;
 
         // Send video details
         await conn.sendMessage(from, { image: { url: data.result.thumbnail || '' }, caption: ytmsg }, { quoted: mek });
@@ -51,7 +49,7 @@ cmd({
             document: { url: data.result.download_url }, 
             mimetype: "video/mp4", 
             fileName: `${data.result.title}.mp4`, 
-            caption: `> *${yts.title}*\n> 🄿🄾🅆🄴🅁🄳 🅱🆈 𝐒𝐔𝐋𝐀_𝐌𝐃 😈`
+            caption: `> *${yts.title}*\n> 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳`
         }, { quoted: mek });
 
     } catch (e) {
@@ -63,8 +61,8 @@ cmd({
 // play
 
 cmd({ 
-    pattern: "mp3", 
-    alias: ["ytdl1", "song1"], 
+    pattern: "mp3NBM", 
+    alias: ["ytdl1", "song1NB"], 
     react: "🎥", 
     desc: "Download Youtube song", 
     category: "main", 
