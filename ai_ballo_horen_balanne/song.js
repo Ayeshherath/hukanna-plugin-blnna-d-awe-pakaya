@@ -25,35 +25,31 @@ cmd({
         const url = data.url;
 
        
-        let desc = `
- 「𝐒𝐔𝐋𝐀-𝐌𝐃 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐄」
+        let desc = `*𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳  𝐒𝙾𝙽𝙶  𝐃𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁*
+        
+*Title:* ${data.title}
+*Duration:* ${data.timestamp}
+*Views:* ${data.views}
+*Uploaded On:* ${data.ago}
+────────────────·๏
+┃•1 | Download Audio 🎧
+┃•2 | Download Document 📁
+└─────────────┈⊷
 
-┏━❮ 🎵𝐒𝐔𝐋𝐀-𝐌𝐃🎵 ❯━
-┃🤖 *Title:* ${data.title}
-┃📑 *Duration:* ${data.timestamp}
-┃🔖 *Views:* ${data.views}
-┃📟 *Uploaded On:* ${data.ago}
-┗━━━━━━━━━━━━━━𖣔𖣔
-╭━━〔🔢 *Reply Number*〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃•1 | Download Audio 🎧
-┃◈┃•2 | Download Document 📁
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> 🄿🄾🅆🄴🅁🄳 🅱🆈 𝐒𝐔𝐋𝐀-𝐌𝐃 😈
+> 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳
 `;
 
         const sentMsg = await conn.sendMessage(from, {
             image: { url: data.thumbnail },
             caption: desc,
             contextInfo: {
-                mentionedJid: ['94760663483@s.whatsapp.net'],
+                mentionedJid: ['94775341543@s.whatsapp.net'],
                 groupMentions: [],
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363385281017920@newsletter',
-                    newsletterName: "𝐒𝐔𝐋𝐀-𝐌𝐃",
+                    newsletterJid: '120363296605464049@newsletter',
+                    newsletterName: "𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳",
                     serverMessageId: 999
                 }
             }
@@ -99,7 +95,7 @@ cmd({
                                     body: data.videoId,
                                     mediaType: 1,
                                     sourceUrl: data.url,
-                                    thumbnailUrl: "https://i.ibb.co/dHwhYTC/SulaMd.jpg",
+                                    thumbnailUrl: "https://i.ibb.co/DPchmx5X/1234.jpg",
                                     renderLargerThumbnail: true,
                                     showAdAttribution: true
                                 }
@@ -110,7 +106,7 @@ cmd({
                             document: { url: downloadUrl },
                             mimetype: "audio/mp3",
                             fileName: `${data.title}.mp3`,
-                            caption: "> 🄿🄾🅆🄴🅁🄳 🅱🆈 𝐒𝐔𝐋𝐀-𝐌𝐃 😈"
+                            caption: "> 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳"
                         }, { quoted: mek });
                     } else if (messageType === '3') { // Voice
                         await conn.sendMessage(fromReply, {
@@ -123,7 +119,7 @@ cmd({
                                     body: data.videoId,
                                     mediaType: 1,
                                     sourceUrl: data.url,
-                                    thumbnailUrl: "https://i.ibb.co/dHwhYTC/SulaMd.jpg",
+                                    thumbnailUrl: "https://i.ibb.co/DPchmx5X/1234.jpg",
                                     renderLargerThumbnail: true,
                                     showAdAttribution: true
                                 }
