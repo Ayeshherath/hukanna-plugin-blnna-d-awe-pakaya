@@ -41,7 +41,7 @@ try{
     let link = response.data.data.url;
     fs.unlinkSync(tempFilePath);
 
-    m.reply(`*IMG URL* ${link}\n\n> 𝐏ᴀɴᴅᴀ   𝐎ꜰᴄ   𝐁ᴏᴛ™`);
+    m.reply(`*IMG URL* ${link}\n\n> 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳`);
     
 } catch (e) {
 reply(`${e}`)
