@@ -37,7 +37,7 @@ const msg = `
 🔮 *Like* - ${xv_info.result.like}
 ❍⚯───────────────────────────────⚯❍
 
-> 𝐏ᴀɴᴅᴀ   𝐎ꜰᴄ   𝐁ᴏᴛ™`
+> 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳`
 
 // Sending the image with caption
           const sentMsg = await conn.sendMessage(from, {
