@@ -29,13 +29,13 @@ const xv_info = await fetchJson(`${apilink}/download/xvideo?url=${xv_list.result
   // FIRST VIDEO
   
 const msg = `
-        🔞 *𝐒𝐔𝐋𝐀-𝐌𝐃 XVIDEO DOWNLOADER* 🔞
+        🔞 *𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳 XVIDEO DOWNLOADER* 🔞
     
 🥵 *Title* - ${xv_info.result.title}
 🥵 *Views* - ${xv_info.result.views}
 🥵 *Like* - ${xv_info.result.like}
 
-> 🄿🄾🅆🄴🅁🄳 🅱🆈 𝐒𝐔𝐋𝐀-𝐌𝐃 😈`
+> 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳`
 
 // Sending the image with caption
           const sentMsg = await conn.sendMessage(from, {
@@ -47,11 +47,11 @@ const msg = `
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-          newsletterName: '𝐒𝐔𝐋𝐀-𝐌𝐃',
-          newsletterJid: "120363385281017920@newsletter",
+          newsletterName: '𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳',
+          newsletterJid: "120363296605464049@newsletter",
           },
           externalAdReply: {
-              title: `𝐒𝐔𝐋𝐀-𝐌𝐃 Xvideo Downloader`,
+              title: `𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳 Xvideo Downloader`,
               body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
               thumbnailUrl: xv_info.result.image,
               sourceUrl: ``,
