@@ -19,7 +19,7 @@ let des = `*👋 Hello ${pushname}*
 
 > 𝐐𝚄𝙴𝙴𝙽  𝐃𝙸𝙽𝚄𝚉𝚉  𝐌𝙳
 `
-return await conn.sendMessage(from,{image: {url: "https://i.ibb.co/Qv6pWXW9/2530.jpg"},caption: des},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: "https://i.ibb.co/DPchmx5X/1234.jpg"},caption: des},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
